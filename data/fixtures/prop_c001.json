@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_c001",
+  "claim_type": "property",
+  "policy_id": "POL-559012",
+  "claimant_name": "David Chen",
+  "incident_date": "2026-07-15",
+  "date_reported": "2026-07-16",
+  "incident_description": "Severe windstorm damaged roof shingles on the north-facing slope and tore loose one section of gutter. No interior water damage observed.",
+  "line_items": [
+    {
+      "description": "Roof shingle repair (north slope)",
+      "amount": 2400.0
+    },
+    {
+      "description": "Gutter section replacement",
+      "amount": 380.0
+    }
+  ],
+  "claimed_amount_stated": 2780.0,
+  "claimed_amount_computed": 2780.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "route_specialist",
+  "known_issues": [
+    "none"
+  ]
+}

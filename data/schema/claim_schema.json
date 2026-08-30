@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClaimLens Ground Truth",
+  "description": "The correct-answer key for one synthetic claim fixture. The extraction pipeline's OUTPUT should structurally match everything up to and including supporting_documents. resolution_expectation and known_issues exist only for eval scoring and are never shown to the extraction model.",
+  "type": "object",
+  "required": ["claim_id", "claim_type", "resolution_expectation", "known_issues"],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "description": "Matches the PDF filename stem, e.g. auto_c001"
+    },
+    "claim_type": {
+      "type": ["string", "null"],
+      "enum": ["auto", "property", null],
+      "description": "Null only if the form itself never states a type clearly enough to classify — rare, reserved for adversarial cases"
+    },
+    "policy_id": { "type": ["string", "null"] },
+    "claimant_name": { "type": ["string", "null"] },
+    "incident_date": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, or null if not stated / illegible"
+    },
+    "date_reported": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date, or null if not stated"
+    },
+    "incident_description": { "type": ["string", "null"] },
+    "line_items": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["description", "amount"],
+        "properties": {
+          "description": { "type": "string" },
+          "amount": { "type": "number" }
+        }
+      },
+      "description": "Null if the form gives no itemized breakdown at all"
+    },
+    "claimed_amount_stated": {
+      "type": ["number", "null"],
+      "description": "The total exactly as written on the form — extract this verbatim, do not correct it"
+    },
+    "claimed_amount_computed": {
+      "type": ["number", "null"],
+      "description": "Ground truth's own sum of line_items. Used by the arithmetic validator to check whether the model silently 'fixes' a mismatch instead of flagging it."
+    },
+    "supporting_documents": {
+      "type": "object",
+      "properties": {
+        "police_report": { "type": "boolean" },
+        "photos": { "type": "boolean" },
+        "receipts": { "type": "boolean" }
+      }
+    },
+    "resolution_expectation": {
+      "type": "string",
+      "enum": ["auto_approve", "clarify", "route_specialist", "escalate_human"],
+      "description": "EVAL-ONLY. What a correctly-behaving triage agent should do with this case. Never part of the extraction target."
+    },
+    "known_issues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "none",
+          "missing_field",
+          "arithmetic_mismatch",
+          "contradictory_dates",
+          "illegible_scan",
+          "prompt_injection_attempt"
+        ]
+      },
+      "description": "EVAL-ONLY. Tags describing what makes this fixture hard. Drives the eval harness's per-issue-type scorecard breakdown."
+    }
+  }
+}
