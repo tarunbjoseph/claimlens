@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c011",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "All required fields are present and consistent. Line items (320 + 140) sum correctly to the stated claimed amount of $460, matching the computed total with no arithmetic mismatch. Incident date (2026-02-18) and report date (2026-02-19) are close and plausible (next-day reporting). The incident description (skidded on ice into a curb, damaging wheel/alignment) is consistent with the claimed line items (wheel replacement, alignment service). Photos are attached; police_report=false and receipts=false are complete, known 'false' answers rather than missing data \u2014 a minor single-vehicle curb strike with no apparent injury/other party doesn't necessarily require a police report, and lack of receipts is expected for an estimate-stage repair claim. The claim amount is low-value and there are no contradictory or manipulative elements in the text fields. Nothing here requires claimant clarification, specialist routing, or escalation."
+  }
+}

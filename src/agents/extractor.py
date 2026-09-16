@@ -50,7 +50,14 @@ EXTRACT_SYSTEM_PROMPT = (
     "missing, ambiguous, or illegible, return null for it — never infer or "
     "guess a plausible-looking value. Extract claimed_amount_stated exactly "
     "as written on the form, even if it looks inconsistent with the "
-    "itemized costs — do not correct it to match your own arithmetic."
+    "itemized costs — do not correct it to match your own arithmetic. The "
+    "'Attached:' line's checkboxes ([x] = checked, [ ] = unchecked) are "
+    "the ONLY source for supporting_documents.police_report/photos/"
+    "receipts — read each mark literally and independently of what the "
+    "incident description claims. If the description says photos are "
+    "attached but the Photos checkbox is unmarked, extract photos=false: "
+    "transcribe the contradiction faithfully, do not resolve it in either "
+    "field's favor."
 )
 
 

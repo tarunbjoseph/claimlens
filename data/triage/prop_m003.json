@@ -1,0 +1,16 @@
+{
+  "claim_id": "prop_m003",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide the plumber's repair estimate (or final invoice) and the total dollar amount you're claiming for the water heater leak damage? Also, do you have any photos of the flooring damage you could attach to support the claim?",
+    "missing_or_unclear_fields": [
+      "claimed_amount_stated",
+      "line_items",
+      "supporting_documents.photos"
+    ],
+    "reasoning": "The claim has no line items and no claimed amount at all \u2014 the claimant states they are still waiting on a plumber's quote. Without any stated amount or itemization, there is nothing to arithmetically check or approve, and no value to route to a specialist based on. This is a gap the claimant themselves can resolve once they receive the quote. Photos of the damage are also absent, which would help substantiate the claim once an amount is provided; this is a reasonable thing to request from the claimant rather than escalate or auto-approve. Note: receipts=false is expected/normal at this estimate stage and is not itself flagged as an issue."
+  }
+}

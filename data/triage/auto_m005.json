@@ -1,0 +1,15 @@
+{
+  "claim_id": "auto_m005",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "What is the amount you are claiming for the windshield/debris damage (e.g., a repair or replacement estimate)? We don't have any claimed amount or itemized costs on file for this claim.",
+    "missing_or_unclear_fields": [
+      "claimed_amount_stated",
+      "line_items"
+    ],
+    "reasoning": "This is an auto claim for windshield damage from road debris, but both claimed_amount_stated and line_items are null - there is no dollar figure anywhere in the claim to evaluate. Supporting document flags (police_report, photos, receipts all false) are acceptable as-is per policy (an estimate-stage claim doesn't require receipts), so those are not blockers. However, without any claimed amount or line items, there is nothing to check arithmetically or route by value, and it's something the claimant can readily supply (e.g., a repair estimate). This is a genuine missing-field case rather than an inconsistency requiring escalation."
+  }
+}

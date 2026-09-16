@@ -1,0 +1,11 @@
+{
+  "claim_id": "prop_c006",
+  "expected": "auto_approve",
+  "decision": "route_specialist",
+  "match": false,
+  "tool_name": "route_to_specialist",
+  "args": {
+    "specialist_type": "property_damage",
+    "reasoning": "The claim data is internally consistent and complete: line items ($300 window glass + $90 for two screens) sum correctly to the stated $390 claimed amount, the arithmetic check confirms no mismatch, the incident (hailstorm) and reporting dates are close together and non-contradictory, photos are attached, and the absence of a police report and receipts is expected for weather-related property damage at the estimate stage (no crime to report, repair not yet completed/paid for). There is no missing or ambiguous information that the claimant would need to clarify, and no suspicious or manipulative language in the incident description. However, this is a property damage claim, which per policy falls outside the scope of items I should auto-approve regardless of how clean the data is. It should be routed to a property damage specialist for final adjudication (e.g., verifying coverage for hail/weather events and reasonableness of glass/screen repair costs)."
+  }
+}

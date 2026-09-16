@@ -1,0 +1,11 @@
+{
+  "claim_id": "prop_c007",
+  "expected": "auto_approve",
+  "decision": "route_specialist",
+  "match": false,
+  "tool_name": "route_to_specialist",
+  "args": {
+    "specialist_type": "property_damage",
+    "reasoning": "Claim data is internally consistent: single line item of $850 matches claimed_amount_stated and computed_total (no arithmetic mismatch), incident (2026-04-20) and report dates (2026-04-21) are logically ordered and in the past relative to today, photos are attached supporting the described wind damage to the fence, and the absence of a police report and receipts is expected/normal for a wind-damage property claim at the estimate stage (no crime to report, repair not yet completed). There is nothing ambiguous or missing that the claimant needs to clarify, and no arithmetic or date inconsistency to escalate. However, this is a property damage claim, which per policy falls outside this channel's auto-approval authority and should be reviewed by a property damage specialist."
+  }
+}

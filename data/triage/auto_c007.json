@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c007",
+  "expected": "route_specialist",
+  "decision": "auto_approve",
+  "match": false,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Claim is internally consistent: single line item of $1400 matches the claimed_amount_stated and the computed total (no arithmetic mismatch). Incident and report dates align and are plausible relative to today. A police report is on file for the theft, which is standard for catalytic converter theft claims. Absence of photos/receipts is expected and complete information (booleans =false) for an estimate-stage repair that hasn't occurred yet, not a missing field. The incident description is a plain factual narrative with no embedded instructions or manipulative language. Amount is modest and the claim type/value doesn't trigger a need for specialist routing. Nothing is missing, ambiguous, or inconsistent, so this can be auto-approved."
+  }
+}

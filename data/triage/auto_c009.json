@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c009",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Auto claim is complete and internally consistent: single line item ($380 windshield replacement) matches the stated claimed amount and computed total (no arithmetic mismatch). Incident date (2026-08-05) and report date (2026-08-06) are close together and plausible, with no contradictions. Photos are attached supporting the damage claim. Lack of a police report is normal/expected for a minor road-debris windshield crack (not a collision requiring police involvement), and receipts=false is expected at the estimate stage before repair work is completed \u2014 per policy this is not a reason to withhold approval. The claimed amount is low value and typical for this type of damage, with no signs of manipulation or inconsistency in the data. Nothing is missing, ambiguous, or arithmetically inconsistent, so this is appropriate for auto-approval rather than escalation, specialist routing, or further clarification."
+  }
+}

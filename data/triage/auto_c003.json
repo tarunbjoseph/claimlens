@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c003",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "All required fields are present and consistent: policy ID, claimant, incident date (2026-05-20) precedes report date (2026-05-21) by one day (reasonable), and description matches a plausible vandalism incident with police report filed. Line items sum to $1270.00, matching the stated claimed amount and the computed total\u2014no arithmetic mismatch. Supporting documents show police_report=true and photos=true; receipts=false is expected since this is an estimate-stage repair claim that hasn't occurred yet, not a red flag. The claim amount ($1,270) is low-value and the claim type (auto vandalism/paint repair) is a routine, well-documented case with no ambiguity, contradiction, or manipulative language requiring escalation or specialist review."
+  }
+}

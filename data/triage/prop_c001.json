@@ -1,0 +1,11 @@
+{
+  "claim_id": "prop_c001",
+  "expected": "route_specialist",
+  "decision": "route_specialist",
+  "match": true,
+  "tool_name": "route_to_specialist",
+  "args": {
+    "specialist_type": "property_damage",
+    "reasoning": "All fields are present, internally consistent, and the arithmetic checks out ($2,400 + $380 = $2,780, matching the stated total, no mismatch). Dates are consistent (incident 7/15/2026, reported 7/16/2026, next day - reasonable). Photos are attached; absence of a police report is expected for windstorm/weather damage (no crime involved); absence of receipts is expected since this appears to be an estimate-stage claim (repairs not yet completed) rather than a reimbursement claim, which is normal and not a red flag per policy. No contradictory or manipulative language in the incident description. However, this is a property damage claim (roof and gutter storm damage), which per policy falls outside the scope of auto-approval and should be reviewed by a property damage specialist rather than approved automatically."
+  }
+}

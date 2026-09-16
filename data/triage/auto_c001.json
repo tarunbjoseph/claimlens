@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c001",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Claim data is complete and internally consistent: claim type, policy ID, and claimant are specified; incident date (2026-08-02) precedes report date (2026-08-03) and both are before today, with no contradictions. Line items sum to $1200 + $340 + $560 = $2100, matching the claimed_amount_stated and the computed_total from the arithmetic check (no mismatch). Supporting documentation includes a police report and photos confirming the other driver was at fault (cited for following too closely); receipts=false is expected and normal since this is a repair estimate rather than a completed/paid repair. The amount ($2100) is modest and the claim is a standard, well-documented auto collision claim with no ambiguous or contradictory information and no signs of manipulative phrasing. Nothing requires claimant clarification, specialist routing, or escalation."
+  }
+}

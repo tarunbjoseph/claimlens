@@ -1,0 +1,11 @@
+{
+  "claim_id": "prop_c008",
+  "expected": "route_specialist",
+  "decision": "route_specialist",
+  "match": true,
+  "tool_name": "route_to_specialist",
+  "args": {
+    "specialist_type": "property_damage",
+    "reasoning": "All required fields are present, consistent, and complete: claimant, policy, incident/report dates are reasonable, line items sum correctly ($1200 + $680 = $1880, matching claimed_amount_stated with no arithmetic mismatch), and supporting documentation status is clearly known (photos attached; police report and receipts not attached, which is normal for an estimate-stage water damage repair not yet completed). There is nothing ambiguous or missing for the claimant to clarify, and nothing internally inconsistent that would warrant escalation. However, this is a property damage claim (water seepage/structural and contents damage), which per policy falls outside the scope of automatic approval and should be routed to a property damage specialist for valuation/coverage review rather than approved directly."
+  }
+}

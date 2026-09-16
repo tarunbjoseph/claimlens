@@ -1,0 +1,14 @@
+{
+  "claim_id": "auto_m006",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Your incident description states that photos of both vehicles showing the damage are attached, but our records show no photos were actually received with this claim. Could you please upload the photos, or clarify if they were submitted separately?",
+    "missing_or_unclear_fields": [
+      "supporting_documents.photos"
+    ],
+    "reasoning": "The incident_description explicitly states \"photos of both vehicles attached showing the damage,\" but the supporting_documents.photos flag is false, indicating no photos were actually received. This is an internal inconsistency in the claim data (not an arithmetic issue) that the claimant can directly resolve by either providing the photos they believe were attached or confirming none were sent. All other aspects of the claim (amount, dates, policy info) are consistent and the claimed amount ($420) and lack of police report are unremarkable for a minor parking lot fender-bender, so this is the only outstanding item before the claim could be approved."
+  }
+}

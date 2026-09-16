@@ -1,0 +1,11 @@
+{
+  "claim_id": "prop_c005",
+  "expected": "route_specialist",
+  "decision": "route_specialist",
+  "match": true,
+  "tool_name": "route_to_specialist",
+  "args": {
+    "specialist_type": "property_damage",
+    "reasoning": "This is a property damage claim (lightning-induced power surge damaging electrical panel and appliances) totaling $2,750. The data itself is internally consistent: line items sum correctly to the stated claimed amount ($1,100 + $900 + $750 = $2,750, no arithmetic mismatch), dates are consistent (incident 2026-06-28, reported next day 2026-06-29), and supporting documentation fields are all clearly answered (photos attached=true; police_report=false and receipts=false are legitimate/expected for this type of claim since a lightning surge isn't a police matter and this appears to be an estimate-stage claim before repairs/replacements were completed). Since there is nothing missing, ambiguous, or inconsistent to clarify or escalate, but property damage claims fall outside the scope of items that should be auto-approved, this should be routed to a property damage specialist for value/coverage assessment (e.g., verifying appliance replacement costs, panel replacement estimate reasonableness, and policy coverage for surge damage)."
+  }
+}

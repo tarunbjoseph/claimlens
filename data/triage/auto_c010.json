@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c010",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Auto claim with consistent, complete data: policy ID, claimant, and dates all present and coherent (incident 6/14, reported next day 6/15). Line items ($900 roof dent + $420 windshield) sum exactly to the stated claimed amount of $1320, matching the arithmetic check (no mismatch). The incident description (tree branch falling during a windstorm) plausibly explains both damages (roof dent + cracked rear windshield). Photos are attached; absence of a police report is normal for weather/act-of-nature damage (no crime to report); receipts=false is expected at the estimate stage per policy and not a withholding reason. No contradictions, no missing required fields, and the claimed amount is modest and unremarkable \u2014 no basis to escalate, route to a specialist, or ask the claimant anything further."
+  }
+}

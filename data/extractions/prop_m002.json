@@ -4,19 +4,14 @@
     "claim_type": "property"
   },
   "extraction": {
-    "claim_type": "property",
+    "claim_type": null,
     "policy_id": null,
-    "claimant_name": "Helena Cross",
-    "incident_date": "2026-03-20",
-    "date_reported": "2026-03-21",
-    "incident_description": "Storm damage to the back porch roof \u2014 a couple of panels came loose.",
-    "line_items": [
-      {
-        "description": "Porch roof panel repair",
-        "amount": 450.0
-      }
-    ],
-    "claimed_amount_stated": 450.0,
+    "claimant_name": null,
+    "incident_date": null,
+    "date_reported": null,
+    "incident_description": null,
+    "line_items": null,
+    "claimed_amount_stated": null,
     "supporting_documents": {
       "police_report": false,
       "photos": false,
@@ -24,7 +19,7 @@
     }
   },
   "arithmetic": {
-    "computed_total": 450.0,
-    "arithmetic_mismatch": false
+    "computed_total": null,
+    "arithmetic_mismatch": null
   }
 }

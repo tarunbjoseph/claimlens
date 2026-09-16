@@ -1,0 +1,16 @@
+{
+  "claim_id": "auto_m002",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide the total dollar amount you're claiming for the repair, and confirm the rest of the incident description (it appears cut off after \"Front bump\u2014\")? We also don't have any line items on file for this claim.",
+    "missing_or_unclear_fields": [
+      "claimed_amount_stated",
+      "line_items",
+      "incident_description"
+    ],
+    "reasoning": "No claimed_amount_stated and no line_items were provided at all, so there is no dollar figure to evaluate or verify arithmetic against. Additionally, the incident_description text is truncated mid-sentence (\"Front bump\u2014\"), suggesting the full description may not have been captured. Both are details only the claimant can supply/clarify; supporting_documents all being false is not itself a blocker per policy (consistent with an estimate-stage claim), but without any claimed amount there is nothing to adjudicate."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "claim_id": "auto_m008",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide the estimated or claimed dollar amount for the fire damage (to the vehicle, garage shelving, and drywall), along with a breakdown of the affected items/repairs? The claim currently has no claimed amount or itemized costs listed.",
+    "missing_or_unclear_fields": [
+      "claimed_amount_stated",
+      "line_items"
+    ],
+    "reasoning": "The claim has no claimed_amount_stated and no line_items at all, so there is no dollar value to evaluate, route by threshold, or verify arithmetically. This is distinct from receipts=false (which is expected pre-repair) \u2014 here we lack even an estimated total or itemization of what is being claimed (vehicle damage vs. garage structure damage). This is information the claimant (or their contractor/adjuster estimate) can readily supply, so a clarifying question is appropriate rather than escalation or approval. Other fields (dates, description, document flags) are internally consistent and not contradictory, so this isn't an escalation-worthy inconsistency at this stage."
+  }
+}

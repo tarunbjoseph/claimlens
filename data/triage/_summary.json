@@ -1,0 +1,39 @@
+{
+  "total": 40,
+  "ok": 40,
+  "errors": 0,
+  "overall_matches": 33,
+  "by_expected": {
+    "auto_approve": {
+      "matches": 10,
+      "total": 13,
+      "mismatch_ids": [
+        "prop_c006",
+        "prop_c007",
+        "prop_c009"
+      ]
+    },
+    "route_specialist": {
+      "matches": 5,
+      "total": 7,
+      "mismatch_ids": [
+        "auto_c006",
+        "auto_c007"
+      ]
+    },
+    "clarify": {
+      "matches": 14,
+      "total": 15,
+      "mismatch_ids": [
+        "prop_m007"
+      ]
+    },
+    "escalate_human": {
+      "matches": 4,
+      "total": 5,
+      "mismatch_ids": [
+        "prop_x001"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "claim_id": "prop_c004",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Claim is complete and internally consistent: line items ($600 electrical repair + $380 drywall repair) sum correctly to the stated claimed amount of $980, matching the arithmetic check (no mismatch). Incident and report dates align (same day), the description is coherent (fire department confirmed a contained electrical fire), and photos are attached as supporting evidence. Receipts=false is expected and non-disqualifying since this is an estimate-stage repair claim that hasn't been completed yet. Absence of a police report is appropriate since this was a fire incident handled by the fire department, not a police matter. The claim value ($980) is low and does not warrant specialist routing, and there is no ambiguous, missing, or manipulative content requiring clarification or escalation."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": "prop_m004",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Your claim description states that a receipt for the replacement shed door is attached, but our records show no receipt was actually received with your claim. Could you please upload or resend the receipt for the $260 shed door replacement?",
+    "missing_or_unclear_fields": [
+      "supporting_documents.receipts"
+    ],
+    "reasoning": "The incident_description explicitly states 'receipt for the replacement door is attached,' but the structured supporting_documents.receipts field is false, indicating no receipt was actually captured/attached. This is a direct inconsistency between two parts of the claim data (not just an expected false for an estimate-stage claim) and is something the claimant can readily resolve by providing the receipt they say they included. Everything else (arithmetic, dates, amount) is consistent and low-value, so once the receipt discrepancy is resolved this would likely be approvable."
+  }
+}

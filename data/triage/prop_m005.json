@@ -1,0 +1,17 @@
+{
+  "claim_id": "prop_m005",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide (1) the specific date the windstorm damaged your roof flashing, (2) the date you are reporting this incident, and (3) an estimated repair cost or amount you're claiming (with any line items, if available)?",
+    "missing_or_unclear_fields": [
+      "incident_date",
+      "date_reported",
+      "claimed_amount_stated",
+      "line_items"
+    ],
+    "reasoning": "The claim is missing several key fields needed for processing: incident_date and date_reported are both null, and the incident_description only vaguely states 'sometime early this month' rather than a specific date. There is also no claimed_amount_stated or line_items provided, so there's nothing to arithmetically verify and no basis to assess the claim's value. These are all things the claimant themselves can readily supply (the actual date of the windstorm, when they're reporting it, and an estimate or receipt-based cost), so clarification is the appropriate step rather than escalation or routing. Supporting documents being false (no police report, photos, or receipts) is expected/normal for an estimate-stage property claim and is not itself a reason for concern."
+  }
+}

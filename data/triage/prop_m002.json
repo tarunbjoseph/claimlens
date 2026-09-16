@@ -1,0 +1,21 @@
+{
+  "claim_id": "prop_m002",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "It looks like your claim submission came through without any of the core details we need. Could you please provide: your policy number, your full name, the type of claim (e.g., auto, property, medical), the date of the incident, the date you're reporting it, a description of what happened, an itemized list of costs/damages, and the total amount you're claiming?",
+    "missing_or_unclear_fields": [
+      "claim_type",
+      "policy_id",
+      "claimant_name",
+      "incident_date",
+      "date_reported",
+      "incident_description",
+      "line_items",
+      "claimed_amount_stated"
+    ],
+    "reasoning": "Every substantive field in the extracted claim data is null \u2014 there is no claim type, policy ID, claimant identity, incident date/description, line items, or claimed amount. Only the supporting_documents booleans are populated (all false), which on their own aren't actionable without knowing what the claim is even about. This isn't an arithmetic mismatch or a sign of manipulation (the arithmetic check itself returned None/None because there were no line items to check) \u2014 it's simply an incomplete submission that the claimant is best positioned to fill in themselves, so a clarifying question is the right next step rather than escalation or approval."
+  }
+}

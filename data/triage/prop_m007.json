@@ -1,0 +1,10 @@
+{
+  "claim_id": "prop_m007",
+  "expected": "clarify",
+  "decision": "auto_approve",
+  "match": false,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Claim data is complete and internally consistent: line items sum exactly to the stated claimed amount ($500 + $90 = $590, no arithmetic mismatch). Incident date (2026-07-25) and report date (2026-07-26) are consistent with a prompt, one-day report, and precede today's date. The incident description (hail damage to roof and window screens) is plausible and matches the low-dollar line items. Photos are attached to support the damage claim; no police report is expected or needed for weather/hail damage; receipts=false is normal since this is a repair estimate, not a completed/reimbursed repair. The claimed amount ($590) is low-value, well within typical auto-approval thresholds for property claims, with no signs of inflation, duplication, or suspicious content in any field. No missing or ambiguous data remains that would require claimant clarification, and nothing warrants specialist routing or escalation."
+  }
+}

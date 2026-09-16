@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c006",
+  "expected": "route_specialist",
+  "decision": "auto_approve",
+  "match": false,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "Auto claim with clear, consistent data: line items sum to $1850, matching the stated claimed amount (no arithmetic mismatch). Incident and report dates align. Police report and photos are attached; receipts=false is expected since this is an estimate-stage repair claim (deer collision, front-end damage), not a red flag. Amount is modest and damage description is consistent with the claimed line items. No missing, ambiguous, or contradictory fields, and no manipulative content in the free-text description. Nothing requires specialist review given the low value and straightforward nature of the claim."
+  }
+}

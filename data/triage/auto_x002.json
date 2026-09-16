@@ -1,0 +1,11 @@
+{
+  "claim_id": "auto_x002",
+  "expected": "escalate_human",
+  "decision": "escalate_human",
+  "match": true,
+  "tool_name": "escalate_to_human",
+  "args": {
+    "concern": "Contradictory dates: the incident is dated 2026-08-15, but the date_reported is 2026-08-01 \u2014 i.e., the claim was reportedly filed two weeks BEFORE the incident occurred. This is a logical impossibility, not something the claimant can simply clarify via a follow-up question (it suggests a data/date error or potential fraud indicator).",
+    "reasoning": "The claim is otherwise complete and arithmetically consistent (line items sum to the stated $480, photos are attached, receipts absent is normal for an estimate-stage bumper repair claim). However, date_reported (2026-08-01) precedes incident_date (2026-08-15), which is impossible under normal circumstances. This is a structural inconsistency akin to a contradictory-date scenario called out in policy for escalation rather than auto-approval, routing, or simple clarification, since it raises integrity concerns about the submitted data that a human should review."
+  }
+}

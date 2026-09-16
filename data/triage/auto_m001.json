@@ -1,0 +1,15 @@
+{
+  "claim_id": "auto_m001",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you please provide your policy ID number, and confirm the exact amount you're claiming for the rear bumper repair (the description mentions an estimate of $400-500, but no firm figure was given)?",
+    "missing_or_unclear_fields": [
+      "policy_id",
+      "claimed_amount_stated"
+    ],
+    "reasoning": "The policy_id field is null, which is needed to identify which policy this claim applies to before any approval or routing decision can be made. Additionally, no firm claimed_amount_stated was extracted \u2014 the incident description only gives a rough, unconfirmed range ('$400-500?') and notes the claimant hasn't gotten a repair quote yet. The lack of receipts/photos/police report is not itself concerning (this appears to be an estimate-stage minor claim, which is normal), but the missing policy identifier and lack of a concrete claimed amount are things only the claimant can resolve, so clarification is appropriate rather than escalation or auto-approval."
+  }
+}

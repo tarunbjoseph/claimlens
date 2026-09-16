@@ -4,14 +4,14 @@
   "errors": 0,
   "error_ids": [],
   "null_rates": {
-    "claim_type": 0.0,
+    "claim_type": 0.025,
     "policy_id": 0.05,
-    "claimant_name": 0.025,
-    "incident_date": 0.05,
-    "date_reported": 0.075,
-    "incident_description": 0.0,
-    "line_items": 0.275,
-    "claimed_amount_stated": 0.25
+    "claimant_name": 0.05,
+    "incident_date": 0.075,
+    "date_reported": 0.1,
+    "incident_description": 0.025,
+    "line_items": 0.3,
+    "claimed_amount_stated": 0.275
   },
   "arithmetic_mismatch_ids": [
     "auto_x001",

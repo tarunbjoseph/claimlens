@@ -1,0 +1,16 @@
+{
+  "claim_id": "prop_m006",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide (1) the rest of the incident description \u2014 it cuts off mid-sentence (\"damaged the side of the house near the...\") \u2014 and (2) the claimed amount or an itemized estimate of the damage/repair costs, since no amount or line items were included in your submission?",
+    "missing_or_unclear_fields": [
+      "incident_description",
+      "claimed_amount_stated",
+      "line_items"
+    ],
+    "reasoning": "The incident_description field is truncated mid-sentence, leaving the actual damage unclear (e.g., \"near the\" \u2014 near the what? roof, window, foundation?). Additionally, both claimed_amount_stated and line_items are null, meaning there is no monetary claim amount to evaluate at all. These are gaps the claimant can directly resolve by providing the missing text and a cost estimate/amount. This is distinct from supporting_documents=false (which is a normal, complete answer for an estimate-stage claim) \u2014 here the core narrative and monetary basis of the claim itself are incomplete, not just unsupported by documents."
+  }
+}

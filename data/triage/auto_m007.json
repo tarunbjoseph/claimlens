@@ -1,0 +1,15 @@
+{
+  "claim_id": "auto_m007",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide a more specific date (or narrower date range) for when the dent occurred, and let us know the estimated repair cost or claimed amount for the damage?",
+    "missing_or_unclear_fields": [
+      "incident_date",
+      "claimed_amount_stated"
+    ],
+    "reasoning": "The claim is missing a definite incident_date (claimant only says \"sometime in the last week or two\") and has no claimed_amount_stated or line_items, so there's nothing to arithmetic-check and no clear damage value to evaluate. These are gaps the claimant themselves can resolve by providing a narrower timeframe and an estimated cost. No documents are attached, but per policy that alone isn't disqualifying for an estimate-stage claim. There's no evidence of arithmetic mismatch, contradictory dates, or manipulative phrasing \u2014 just incomplete information \u2014 so a clarifying question is the appropriate action rather than escalation or auto-approval."
+  }
+}

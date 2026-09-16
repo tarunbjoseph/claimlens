@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c008",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "All required fields are present and internally consistent. Claim type is auto, policy ID and claimant name are present, incident (7/19/2026) was reported promptly the next day (7/20/2026). Description is a minor parking lot fender bender with the other driver's insurance info and a signed agreed statement of fault. The single line item ($780 rear quarter panel repair) matches the claimed_amount_stated, and the arithmetic check confirms no mismatch (computed_total = 780.0). Photos are attached. Police report is false, which is reasonable/expected for a minor no-injury parking lot incident where fault was mutually agreed on scene. Receipts are false, which per policy is normal and expected for an estimate-stage repair claim that hasn't been completed yet, not a reason for clarification. The amount is low-value and there is nothing ambiguous, contradictory, or manipulative in the data. This is a straightforward, low-value, well-documented claim suitable for auto-approval."
+  }
+}

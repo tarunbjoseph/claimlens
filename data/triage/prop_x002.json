@@ -1,0 +1,11 @@
+{
+  "claim_id": "prop_x002",
+  "expected": "escalate_human",
+  "decision": "escalate_human",
+  "match": true,
+  "tool_name": "escalate_to_human",
+  "args": {
+    "concern": "Arithmetic mismatch: line items sum to $550.00 (fence panel $300 + window glass $250), but the claimed_amount_stated is $950.00 \u2014 a $400 discrepancy with no explanation or additional line item accounting for it.",
+    "reasoning": "The arithmetic check flagged a mismatch between computed_total ($550.00) and claimed_amount_stated ($950.00). This is a data-integrity issue (per policy, arithmetic mismatches are escalated rather than clarified with the claimant) since it's unclear whether the stated total is a typo, an omitted line item, or an inflated claim amount. All other fields (policy ID, dates, descriptions, documentation flags) are otherwise complete and consistent, but this discrepancy needs human review before any approval or further processing."
+  }
+}

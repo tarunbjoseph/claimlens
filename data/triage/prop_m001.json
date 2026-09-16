@@ -1,0 +1,16 @@
+{
+  "claim_id": "prop_m001",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you clarify two things about this claim: (1) Is this kitchen grease fire/smoke damage a new, separate incident, or is it related to the electrical issue you previously reported to us? If related, please give us that prior claim number so we can link or merge them. (2) Since you mentioned a contractor quote is still pending, could you let us know the estimated claim amount (or send the quote/receipts) once you have it, along with the date you first reported this incident?",
+    "missing_or_unclear_fields": [
+      "incident_description (relationship to prior electrical claim)",
+      "claimed_amount_stated",
+      "date_reported"
+    ],
+    "reasoning": "The claimant's own description raises an unresolved question about whether this is a new claim or connected to a previously reported electrical issue on the same policy \u2014 this needs the claimant's input to resolve, not an internal decision. Additionally, claimed_amount_stated and date_reported are both null. The missing amount is expected/acceptable at this estimate stage (contractor quote pending, so receipts=false is normal), but we still need the claimant to confirm the new-vs-related-claim question and to follow up with an amount/date once available. This is not an arithmetic or manipulative-text issue warranting escalation, and it's not clearly a specialist-only claim type/value yet since we don't even know the claimed amount."
+  }
+}

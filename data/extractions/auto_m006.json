@@ -19,7 +19,7 @@
     "claimed_amount_stated": 420.0,
     "supporting_documents": {
       "police_report": false,
-      "photos": true,
+      "photos": false,
       "receipts": false
     }
   },

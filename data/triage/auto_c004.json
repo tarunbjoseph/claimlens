@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c004",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "All required fields are present and consistent. Claim type is auto (hail damage to hood and roof), line items sum correctly to the claimed amount ($480 + $520 = $1000, arithmetic_mismatch is False). Incident date (2026-06-02) and report date (2026-06-03) are close and consistent with no contradiction. Photos of the damage are attached, supporting the claim. Absence of a police report is normal and expected for a weather event (hailstorm) rather than a crime, so it is not a red flag. Absence of receipts is expected since this appears to be an estimate-stage claim for paintless dent repair that has not yet been performed, per standard guidance that receipts=false is not inherently disqualifying. The claim amount ($1000) is modest and there is no indication of property damage to third parties or high-value loss requiring specialist routing. No contradictory information or manipulative language is present in the incident description. Nothing here requires claimant clarification or specialist review \u2014 the claim is complete and internally consistent."
+  }
+}

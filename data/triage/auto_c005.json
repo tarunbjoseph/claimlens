@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c005",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "All required fields are present and consistent. Claim type (auto, hit-and-run/vandalism style damage), policy ID, claimant name, incident/report dates (same day, no lag), and description are all provided and coherent. Line items ($210 mirror + $340 door dent = $550) match the stated claimed amount and the computed total, with no arithmetic mismatch. Supporting documentation includes a police report and photos; receipts are false, which is expected and normal for an estimate-stage repair that hasn't been completed yet, not a red flag. The claim value ($550) is low and within routine auto-physical-damage territory, with no indicators of fraud, manipulation, or contradictory information in the text fields. Nothing here requires claimant clarification, specialist routing, or human escalation."
+  }
+}

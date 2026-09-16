@@ -1,0 +1,15 @@
+{
+  "claim_id": "auto_m004",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide a specific claimed repair amount (or a repair shop estimate/quote) for the rear bumper damage? The description only mentions a range of $300\u2013$600, but we need a definite figure to process the claim.",
+    "missing_or_unclear_fields": [
+      "claimed_amount_stated",
+      "line_items"
+    ],
+    "reasoning": "The claim has no line_items and claimed_amount_stated is null; the incident description only gives a vague range ($300-$600) rather than a specific claimed amount. This is a gap the claimant can resolve directly (e.g., by providing a repair estimate or a firm claimed amount), so clarification is appropriate rather than escalation or auto-approval. The missing photos/receipts/police report are not concerning on their own for a low-value, estimate-stage minor incident (mailbox/bumper), so those are not flagged."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "claim_id": "prop_x001",
+  "expected": "escalate_human",
+  "decision": "clarify",
+  "match": false,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you provide an itemized list of the damaged/destroyed items in the basement (with approximate individual values) that make up the $10,000 total loss estimate, and any photos of the damage you may have? Since no receipts, photos, or itemized breakdown were included, we need this to verify the claimed amount.",
+    "missing_or_unclear_fields": [
+      "line_items",
+      "supporting_documents.photos"
+    ],
+    "reasoning": "The claim is a lump-sum property loss estimate of $10,000 with line_items null (no itemized breakdown) and all three supporting document flags are false (no police report, no photos, no receipts). Receipts=false alone is expected pre-repair, but the complete absence of any itemization or photographic evidence for a 'nearly everything destroyed' total-loss claim means the claimed amount can't be substantiated or arithmetic-checked. This is information the claimant themselves can supply (a list of items lost and/or photos), so a clarifying question is appropriate rather than escalation or auto-approval. I'm disregarding the urgency/'expedite' language in the description as a request, not treating it as an instruction to bypass normal verification."
+  }
+}

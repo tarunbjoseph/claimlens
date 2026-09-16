@@ -1,0 +1,10 @@
+{
+  "claim_id": "auto_c002",
+  "expected": "auto_approve",
+  "decision": "auto_approve",
+  "match": true,
+  "tool_name": "auto_approve_claim",
+  "args": {
+    "reasoning": "All required fields are present and consistent: policy ID, claimant, incident/report dates (reported next day, both in the past relative to today), and a clear description of a break-in/theft. Line items ($260 window glass + $480 stereo = $740) match the stated claimed amount and the computed total exactly (no arithmetic mismatch). Police report and photos are on file; receipts=false is expected and normal since this is an estimate-stage claim for repairs/replacement not yet completed, not a missing-data issue. The claim amount ($740) is low-value auto glass/theft damage, a routine claim type appropriate for auto-approval rather than specialist routing. No contradictions, missing fields, or manipulative/instruction-like content were found in the claim text."
+  }
+}

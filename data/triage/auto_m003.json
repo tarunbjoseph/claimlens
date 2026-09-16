@@ -1,0 +1,14 @@
+{
+  "claim_id": "auto_m003",
+  "expected": "clarify",
+  "decision": "clarify",
+  "match": true,
+  "tool_name": "ask_clarifying_question",
+  "args": {
+    "question": "Could you please provide the claimant's full name to complete the claim record?",
+    "missing_or_unclear_fields": [
+      "claimant_name"
+    ],
+    "reasoning": "All other fields are consistent (arithmetic checks out at $900, dates are sequential and plausible, photos are attached, and the absence of a police report and receipts is expected for a minor sideswipe estimate-stage claim). However, claimant_name is null, which is a basic identifying field the claimant can readily supply, and it should not be assumed or left blank before approval or routing."
+  }
+}
