@@ -1,0 +1,20 @@
+{
+  "total": 40,
+  "ok": 40,
+  "errors": 0,
+  "error_ids": [],
+  "null_rates": {
+    "claim_type": 0.0,
+    "policy_id": 0.05,
+    "claimant_name": 0.025,
+    "incident_date": 0.05,
+    "date_reported": 0.075,
+    "incident_description": 0.0,
+    "line_items": 0.275,
+    "claimed_amount_stated": 0.25
+  },
+  "arithmetic_mismatch_ids": [
+    "auto_x001",
+    "prop_x002"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "claim_id": "prop_c005",
+  "classification": {
+    "claim_type": "property"
+  },
+  "extraction": {
+    "claim_type": "property",
+    "policy_id": "POL-220567",
+    "claimant_name": "Amara Johnson",
+    "incident_date": "2026-06-28",
+    "date_reported": "2026-06-29",
+    "incident_description": "A nearby lightning strike caused a power surge that damaged the home's electrical panel and several appliances.",
+    "line_items": [
+      {
+        "description": "Electrical panel replacement",
+        "amount": 1100.0
+      },
+      {
+        "description": "Refrigerator replacement",
+        "amount": 900.0
+      },
+      {
+        "description": "Washer/dryer replacement",
+        "amount": 750.0
+      }
+    ],
+    "claimed_amount_stated": 2750.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 2750.0,
+    "arithmetic_mismatch": false
+  }
+}

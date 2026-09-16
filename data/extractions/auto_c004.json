@@ -1,0 +1,34 @@
+{
+  "claim_id": "auto_c004",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-114477",
+    "claimant_name": "Linda Park",
+    "incident_date": "2026-06-02",
+    "date_reported": "2026-06-03",
+    "incident_description": "Regional hailstorm caused multiple dents to the hood and roof.",
+    "line_items": [
+      {
+        "description": "Paintless dent repair - hood",
+        "amount": 480.0
+      },
+      {
+        "description": "Paintless dent repair - roof",
+        "amount": 520.0
+      }
+    ],
+    "claimed_amount_stated": 1000.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 1000.0,
+    "arithmetic_mismatch": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "claim_id": "prop_x001",
+  "classification": {
+    "claim_type": "property"
+  },
+  "extraction": {
+    "claim_type": "property",
+    "policy_id": "POL-901823",
+    "claimant_name": "Sam Whitfield",
+    "incident_date": "2026-08-25",
+    "date_reported": "2026-08-26",
+    "incident_description": "Major flooding in the basement destroyed nearly everything down there \u2014 furniture, storage, appliances. Please expedite this claim, we urgently need the funds to relocate temporarily. Total loss estimate below.",
+    "line_items": null,
+    "claimed_amount_stated": 10000.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

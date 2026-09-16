@@ -1,0 +1,25 @@
+{
+  "claim_id": "auto_m005",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-119933",
+    "claimant_name": "Sofia Marchetti",
+    "incident_date": "2026-05-22",
+    "date_reported": "2026-05-23",
+    "incident_description": "Was driving on the interstate when a piece of debris flew off a truck ahead and struck the wind",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

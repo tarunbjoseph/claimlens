@@ -1,0 +1,25 @@
+{
+  "claim_id": "auto_m007",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-770123",
+    "claimant_name": "Angela Ruiz",
+    "incident_date": null,
+    "date_reported": "2026-07-02",
+    "incident_description": "Not entirely sure which day it happened, sometime in the last week or two \u2014 noticed a dent in the driver door I don't remember causing.",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

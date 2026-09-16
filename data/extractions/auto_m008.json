@@ -1,0 +1,25 @@
+{
+  "claim_id": "auto_m008",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-882456",
+    "claimant_name": "Miguel Santos",
+    "incident_date": "2026-08-11",
+    "date_reported": "2026-08-12",
+    "incident_description": "A fire started in the garage (possibly electrical) and damaged the car parked inside as well as garage shelving and drywall.",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "claim_id": "prop_m003",
+  "classification": {
+    "claim_type": "property"
+  },
+  "extraction": {
+    "claim_type": "property",
+    "policy_id": "POL-556890",
+    "claimant_name": "Frank Delgado",
+    "incident_date": "2026-04-11",
+    "date_reported": "2026-04-12",
+    "incident_description": "Water heater leaked and damaged the flooring in the utility closet and hallway. Not sure of the full cost yet, still waiting on a plumber quote.",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

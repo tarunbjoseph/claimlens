@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c007",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-336789",
+    "claimant_name": "Ines Ortega",
+    "incident_date": "2026-06-25",
+    "date_reported": "2026-06-25",
+    "incident_description": "Catalytic converter stolen overnight from the driveway; discovered when the vehicle would not start quietly.",
+    "line_items": [
+      {
+        "description": "Catalytic converter replacement",
+        "amount": 1400.0
+      }
+    ],
+    "claimed_amount_stated": 1400.0,
+    "supporting_documents": {
+      "police_report": true,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 1400.0,
+    "arithmetic_mismatch": false
+  }
+}

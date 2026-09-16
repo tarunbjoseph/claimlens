@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_m003",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-224466",
+    "claimant_name": null,
+    "incident_date": "2026-03-11",
+    "date_reported": "2026-03-12",
+    "incident_description": "Sideswiped by another vehicle changing lanes on the highway; damage to driver-side doors.",
+    "line_items": [
+      {
+        "description": "Door panel repair (x2)",
+        "amount": 900.0
+      }
+    ],
+    "claimed_amount_stated": 900.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 900.0,
+    "arithmetic_mismatch": false
+  }
+}

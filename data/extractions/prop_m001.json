@@ -1,0 +1,25 @@
+{
+  "claim_id": "prop_m001",
+  "classification": {
+    "claim_type": "property"
+  },
+  "extraction": {
+    "claim_type": "property",
+    "policy_id": "POL-330156",
+    "claimant_name": "Jorge Villanueva",
+    "incident_date": "2026-07-01",
+    "date_reported": null,
+    "incident_description": "Small grease fire in the kitchen, some smoke damage to the cabinets above the stove. Might be related to the electrical issue we mentioned before? Not sure if this counts as the same claim or a new one. Will get a contractor quote soon.",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

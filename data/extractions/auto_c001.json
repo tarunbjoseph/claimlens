@@ -1,0 +1,38 @@
+{
+  "claim_id": "auto_c001",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-448291",
+    "claimant_name": "Maria Santos",
+    "incident_date": "2026-08-02",
+    "date_reported": "2026-08-03",
+    "incident_description": "Vehicle was rear-ended while stopped at a red light on Kennedy Rd. The other driver was cited by responding police for following too closely. Police report attached, photos of rear bumper damage attached.",
+    "line_items": [
+      {
+        "description": "Rear bumper replacement",
+        "amount": 1200.0
+      },
+      {
+        "description": "Tail light assembly",
+        "amount": 340.0
+      },
+      {
+        "description": "Paint and labor",
+        "amount": 560.0
+      }
+    ],
+    "claimed_amount_stated": 2100.0,
+    "supporting_documents": {
+      "police_report": true,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 2100.0,
+    "arithmetic_mismatch": false
+  }
+}

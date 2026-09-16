@@ -1,0 +1,38 @@
+{
+  "claim_id": "prop_c002",
+  "classification": {
+    "claim_type": "property"
+  },
+  "extraction": {
+    "claim_type": "property",
+    "policy_id": "POL-556123",
+    "claimant_name": "Nadia Farouk",
+    "incident_date": "2026-03-02",
+    "date_reported": "2026-03-03",
+    "incident_description": "A supply pipe burst under the upstairs bathroom sink overnight, causing water damage to the bathroom floor and the ceiling of the room below.",
+    "line_items": [
+      {
+        "description": "Water extraction and drying",
+        "amount": 850.0
+      },
+      {
+        "description": "Bathroom subfloor repair",
+        "amount": 1100.0
+      },
+      {
+        "description": "Ceiling repair (room below)",
+        "amount": 640.0
+      }
+    ],
+    "claimed_amount_stated": 2590.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 2590.0,
+    "arithmetic_mismatch": false
+  }
+}

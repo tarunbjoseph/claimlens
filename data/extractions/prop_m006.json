@@ -1,0 +1,25 @@
+{
+  "claim_id": "prop_m006",
+  "classification": {
+    "claim_type": "property"
+  },
+  "extraction": {
+    "claim_type": "property",
+    "policy_id": "POL-337654",
+    "claimant_name": "Isabelle Moreau",
+    "incident_date": "2026-06-17",
+    "date_reported": "2026-06-18",
+    "incident_description": "A tree limb came down during a storm and damaged the side of the house near the",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

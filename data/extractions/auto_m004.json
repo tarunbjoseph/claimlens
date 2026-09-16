@@ -1,0 +1,25 @@
+{
+  "claim_id": "auto_m004",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-337788",
+    "claimant_name": "Tyler Brooks",
+    "incident_date": "2026-04-02",
+    "date_reported": "2026-04-03",
+    "incident_description": "Backed into a mailbox, cracked the rear bumper. Repair will probably run somewhere between $300 and $600 depending on the shop.",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

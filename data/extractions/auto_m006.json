@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_m006",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-556781",
+    "claimant_name": "Derek Huang",
+    "incident_date": "2026-06-09",
+    "date_reported": "2026-06-10",
+    "incident_description": "Minor parking lot collision, photos of both vehicles attached showing the damage.",
+    "line_items": [
+      {
+        "description": "Bumper repair",
+        "amount": 420.0
+      }
+    ],
+    "claimed_amount_stated": 420.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 420.0,
+    "arithmetic_mismatch": false
+  }
+}

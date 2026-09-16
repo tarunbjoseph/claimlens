@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c008",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-220098",
+    "claimant_name": "Diane Foster",
+    "incident_date": "2026-07-19",
+    "date_reported": "2026-07-20",
+    "incident_description": "Minor fender bender in a parking lot; other driver provided insurance info and signed an agreed statement of fault.",
+    "line_items": [
+      {
+        "description": "Rear quarter panel repair",
+        "amount": 780.0
+      }
+    ],
+    "claimed_amount_stated": 780.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 780.0,
+    "arithmetic_mismatch": false
+  }
+}

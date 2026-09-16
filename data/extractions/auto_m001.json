@@ -1,0 +1,25 @@
+{
+  "claim_id": "auto_m001",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": null,
+    "claimant_name": "R. Okafor",
+    "incident_date": "2026-08-10",
+    "date_reported": null,
+    "incident_description": "Scraped the car against a parking pole backing out, minor damage to rear bumper. Haven't gotten a repair quote yet, maybe $400-500? Will send receipt when I have it.",
+    "line_items": null,
+    "claimed_amount_stated": null,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": false,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": null,
+    "arithmetic_mismatch": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c009",
+  "classification": {
+    "claim_type": "auto"
+  },
+  "extraction": {
+    "claim_type": "auto",
+    "policy_id": "POL-664112",
+    "claimant_name": "Owen Baptiste",
+    "incident_date": "2026-08-05",
+    "date_reported": "2026-08-06",
+    "incident_description": "A rock kicked up by a truck ahead on the highway cracked the windshield.",
+    "line_items": [
+      {
+        "description": "Windshield replacement",
+        "amount": 380.0
+      }
+    ],
+    "claimed_amount_stated": 380.0,
+    "supporting_documents": {
+      "police_report": false,
+      "photos": true,
+      "receipts": false
+    }
+  },
+  "arithmetic": {
+    "computed_total": 380.0,
+    "arithmetic_mismatch": false
+  }
+}
