@@ -1,0 +1,169 @@
+{
+  "chars_per_token_calibration": {
+    "method": "delta between two live Claude Code calls of very different prompt lengths",
+    "point_1": {
+      "chars": 2065,
+      "input_tokens": 3971
+    },
+    "point_2": {
+      "chars": 2,
+      "input_tokens": 3372
+    },
+    "derived_chars_per_token": 3.444
+  },
+  "token_budget": 1400,
+  "keep_recent_turns": 4,
+  "rows": [
+    {
+      "turn": 1,
+      "naive_tokens": 303,
+      "managed_tokens": 310
+    },
+    {
+      "turn": 2,
+      "naive_tokens": 375,
+      "managed_tokens": 382
+    },
+    {
+      "turn": 3,
+      "naive_tokens": 445,
+      "managed_tokens": 452
+    },
+    {
+      "turn": 4,
+      "naive_tokens": 484,
+      "managed_tokens": 491
+    },
+    {
+      "turn": 5,
+      "naive_tokens": 792,
+      "managed_tokens": 799
+    },
+    {
+      "turn": 6,
+      "naive_tokens": 863,
+      "managed_tokens": 870
+    },
+    {
+      "turn": 7,
+      "naive_tokens": 933,
+      "managed_tokens": 940
+    },
+    {
+      "turn": 8,
+      "naive_tokens": 972,
+      "managed_tokens": 979
+    },
+    {
+      "turn": 9,
+      "naive_tokens": 1280,
+      "managed_tokens": 1287
+    },
+    {
+      "turn": 10,
+      "naive_tokens": 1352,
+      "managed_tokens": 1359
+    },
+    {
+      "turn": 11,
+      "naive_tokens": 1422,
+      "managed_tokens": 1160
+    },
+    {
+      "turn": 12,
+      "naive_tokens": 1461,
+      "managed_tokens": 1199
+    },
+    {
+      "turn": 13,
+      "naive_tokens": 1769,
+      "managed_tokens": 1167
+    },
+    {
+      "turn": 14,
+      "naive_tokens": 1841,
+      "managed_tokens": 1239
+    },
+    {
+      "turn": 15,
+      "naive_tokens": 1911,
+      "managed_tokens": 1309
+    },
+    {
+      "turn": 16,
+      "naive_tokens": 1950,
+      "managed_tokens": 1348
+    },
+    {
+      "turn": 17,
+      "naive_tokens": 2258,
+      "managed_tokens": 1315
+    },
+    {
+      "turn": 18,
+      "naive_tokens": 2329,
+      "managed_tokens": 1387
+    },
+    {
+      "turn": 19,
+      "naive_tokens": 2399,
+      "managed_tokens": 1392
+    },
+    {
+      "turn": 20,
+      "naive_tokens": 2438,
+      "managed_tokens": 1156
+    },
+    {
+      "turn": 21,
+      "naive_tokens": 2746,
+      "managed_tokens": 1399
+    },
+    {
+      "turn": 22,
+      "naive_tokens": 2818,
+      "managed_tokens": 1196
+    },
+    {
+      "turn": 23,
+      "naive_tokens": 2888,
+      "managed_tokens": 1266
+    },
+    {
+      "turn": 24,
+      "naive_tokens": 2927,
+      "managed_tokens": 1305
+    },
+    {
+      "turn": 25,
+      "naive_tokens": 3235,
+      "managed_tokens": 1272
+    },
+    {
+      "turn": 26,
+      "naive_tokens": 3307,
+      "managed_tokens": 1344
+    },
+    {
+      "turn": 27,
+      "naive_tokens": 3377,
+      "managed_tokens": 1381
+    },
+    {
+      "turn": 28,
+      "naive_tokens": 3416,
+      "managed_tokens": 1388
+    },
+    {
+      "turn": 29,
+      "naive_tokens": 3724,
+      "managed_tokens": 1421
+    },
+    {
+      "turn": 30,
+      "naive_tokens": 3795,
+      "managed_tokens": 1459
+    }
+  ],
+  "final_savings_pct": 61.6
+}

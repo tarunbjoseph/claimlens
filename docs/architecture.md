@@ -168,4 +168,27 @@ evidence, not the final grade.
 | Day 2 | Claude Code project config (`CLAUDE.md`, rules, skills) | ✅ verified live |
 | Day 3–4 | Extraction pipeline (classify → extract + arithmetic check) | ✅ 40/40 fixtures, 0 errors |
 | Day 5 | Triage decision loop (auto_approve/clarify/route/escalate) | ✅ 40/40 fixtures, 0 errors, 33/40 match expected outcome |
-| Day 6–7 | Context strategy, `v0.1` tag | ⬜ next |
+| Day 6–7 | Context strategy (case-facts block + pruning), `v0.1` tag | ✅ 62% smaller context at turn 30 of a simulated 30-turn case |
+
+## Context strategy (Day 6–7)
+
+The pipeline so far only makes short, one-shot calls, so this stage
+didn't have a real long conversation to manage yet. Rather than skip
+ahead, it was proven on a **simulated** 30-turn case lifecycle — real
+extraction/triage output plus representative (clearly labeled
+simulated) tool-output turns standing in for Week 2's not-yet-built
+policy-mcp calls — so the mechanism has real evidence behind it before
+Week 2/3 actually wire it into the live orchestrator.
+
+`src/agents/context_manager.py` holds a compact "case facts" block plus
+the most recent few turns verbatim; older turns get folded into the
+facts block as a one-line digest rather than resent in full or dropped.
+Token counts are calibrated against real Claude usage, not guessed: two
+live Claude Code calls of very different prompt lengths were made, and
+the delta between their reported `input_tokens` (599 tokens for 2,063
+extra characters) isolates this project's actual per-character rate
+from the ~3,300-token fixed overhead every call carries regardless of
+content. Result: naive context grew unboundedly to 3,795 tokens by
+turn 30; managed context stayed within ~150 tokens of its 1,400-token
+budget from turn 11 onward — a 62% reduction. Full table in the root
+`README.md`; full per-turn data in `data/context_strategy_results.json`.

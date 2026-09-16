@@ -50,7 +50,33 @@ the evidence files.
 | Day 2 | Claude Code project config (`CLAUDE.md`, rules, skills) | ✅ |
 | Day 3–4 | Extraction pipeline (classify → extract + arithmetic check) | ✅ 40/40, 0 errors |
 | Day 5 | Triage decision loop | ✅ 40/40, 0 errors, 33/40 match expected outcome |
-| Day 6–7 | Context strategy, `v0.1` tag | ⬜ next |
+| Day 6–7 | Context strategy, `v0.1` tag | ✅ see below |
+
+## Context strategy (Day 6–7)
+
+A long-running case shouldn't have to resend its full history every
+turn. `src/agents/context_manager.py` keeps a compact, persistent
+"case facts" block plus the most recent few turns verbatim; anything
+older gets folded into the facts block as a one-line digest instead of
+being resent in full or dropped outright.
+
+Measured on a simulated 30-turn case lifecycle (`src/agents/simulate_context_strategy.py`,
+built from real fixture data, token counts calibrated against actual
+Claude usage reporting — see `docs/build-log.md`):
+
+| Turn | Naive (tokens) | Managed (tokens) |
+|---:|---:|---:|
+| 1 | 303 | 310 |
+| 5 | 792 | 799 |
+| 10 | 1,352 | 1,359 |
+| 15 | 1,911 | 1,309 |
+| 20 | 2,438 | 1,156 |
+| 25 | 3,235 | 1,272 |
+| 30 | 3,795 | 1,459 |
+
+Naive context grows without bound; managed context stays within
+~150 tokens of its 1,400-token budget from turn 11 onward — a **62%
+reduction by turn 30**. Full per-turn data: `data/context_strategy_results.json`.
 
 ## Repo layout
 
