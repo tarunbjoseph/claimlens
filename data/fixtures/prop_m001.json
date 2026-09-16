@@ -1,0 +1,21 @@
+{
+  "claim_id": "prop_m001",
+  "claim_type": "property",
+  "policy_id": "POL-330156",
+  "claimant_name": "Jorge Villanueva",
+  "incident_date": "2026-07-01",
+  "date_reported": null,
+  "incident_description": "Small grease fire in the kitchen with smoke damage to cabinets above the stove. Claimant is unsure whether this relates to a previously reported electrical issue.",
+  "line_items": null,
+  "claimed_amount_stated": null,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_c008",
+  "claim_type": "property",
+  "policy_id": "POL-990456",
+  "claimant_name": "Carla Jimenez",
+  "incident_date": "2026-05-15",
+  "date_reported": "2026-05-16",
+  "incident_description": "Basement water seepage through a wall crack after heavy rainfall, damaging carpet and stored items.",
+  "line_items": [
+    {
+      "description": "Wall crack repair and waterproofing",
+      "amount": 1200.0
+    },
+    {
+      "description": "Carpet replacement",
+      "amount": 680.0
+    }
+  ],
+  "claimed_amount_stated": 1880.0,
+  "claimed_amount_computed": 1880.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "route_specialist",
+  "known_issues": [
+    "none"
+  ]
+}

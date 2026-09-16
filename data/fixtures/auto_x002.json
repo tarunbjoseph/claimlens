@@ -1,0 +1,26 @@
+{
+  "claim_id": "auto_x002",
+  "claim_type": "auto",
+  "policy_id": "POL-448290",
+  "claimant_name": "Nathan Price",
+  "incident_date": "2026-08-15",
+  "date_reported": "2026-08-01",
+  "incident_description": "Parking collision with agreed fault exchange. Date reported precedes the stated incident date.",
+  "line_items": [
+    {
+      "description": "Bumper repair",
+      "amount": 480.0
+    }
+  ],
+  "claimed_amount_stated": 480.0,
+  "claimed_amount_computed": 480.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "escalate_human",
+  "known_issues": [
+    "contradictory_dates"
+  ]
+}

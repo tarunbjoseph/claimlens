@@ -1,0 +1,26 @@
+{
+  "claim_id": "auto_m003",
+  "claim_type": "auto",
+  "policy_id": "POL-224466",
+  "claimant_name": null,
+  "incident_date": "2026-03-11",
+  "date_reported": "2026-03-12",
+  "incident_description": "Sideswiped by another vehicle changing lanes; driver-side door damage. Signature on the form is illegible \u2014 claimant identity unconfirmed.",
+  "line_items": [
+    {
+      "description": "Door panel repair (x2)",
+      "amount": 900.0
+    }
+  ],
+  "claimed_amount_stated": 900.0,
+  "claimed_amount_computed": 900.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

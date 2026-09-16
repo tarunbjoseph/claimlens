@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_m007",
+  "claim_type": "property",
+  "policy_id": "POL-556777",
+  "claimant_name": "J. T.",
+  "incident_date": "2026-07-25",
+  "date_reported": "2026-07-26",
+  "incident_description": "Hail damage to roof and two window screens. Claimant identified only by initials \u2014 full name not confirmable from the form.",
+  "line_items": [
+    {
+      "description": "Roof shingle spot repair",
+      "amount": 500.0
+    },
+    {
+      "description": "Screen replacement (x2)",
+      "amount": 90.0
+    }
+  ],
+  "claimed_amount_stated": 590.0,
+  "claimed_amount_computed": 590.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

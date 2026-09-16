@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_x002",
+  "claim_type": "property",
+  "policy_id": "POL-556432",
+  "claimant_name": "Debra Kim",
+  "incident_date": "2026-06-05",
+  "date_reported": "2026-06-06",
+  "incident_description": "Storm damage to a fence panel and window. Stated total does not match the sum of itemized costs.",
+  "line_items": [
+    {
+      "description": "Fence panel replacement",
+      "amount": 300.0
+    },
+    {
+      "description": "Window glass replacement",
+      "amount": 250.0
+    }
+  ],
+  "claimed_amount_stated": 950.0,
+  "claimed_amount_computed": 550.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "escalate_human",
+  "known_issues": [
+    "arithmetic_mismatch"
+  ]
+}

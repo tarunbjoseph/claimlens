@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_c003",
+  "claim_type": "property",
+  "policy_id": "POL-778341",
+  "claimant_name": "Walter Higgins",
+  "incident_date": "2026-04-19",
+  "date_reported": "2026-04-19",
+  "incident_description": "Tree fell on backyard shed during high winds, destroying the structure.",
+  "line_items": [
+    {
+      "description": "Shed demolition and removal",
+      "amount": 400.0
+    },
+    {
+      "description": "Shed rebuild",
+      "amount": 3200.0
+    }
+  ],
+  "claimed_amount_stated": 3600.0,
+  "claimed_amount_computed": 3600.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "route_specialist",
+  "known_issues": [
+    "none"
+  ]
+}

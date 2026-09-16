@@ -1,0 +1,21 @@
+{
+  "claim_id": "auto_m005",
+  "claim_type": "auto",
+  "policy_id": "POL-119933",
+  "claimant_name": "Sofia Marchetti",
+  "incident_date": "2026-05-22",
+  "date_reported": "2026-05-23",
+  "incident_description": "Description submitted incomplete \u2014 appears to describe debris striking the windshield, but the form was submitted before the sentence was finished.",
+  "line_items": null,
+  "claimed_amount_stated": null,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

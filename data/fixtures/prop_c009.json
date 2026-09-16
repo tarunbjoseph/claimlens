@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_c009",
+  "claim_type": "property",
+  "policy_id": "POL-556234",
+  "claimant_name": "Brian O'Connell",
+  "incident_date": "2026-02-08",
+  "date_reported": "2026-02-10",
+  "incident_description": "Ice dam caused roof shingle damage and detached a gutter section.",
+  "line_items": [
+    {
+      "description": "Shingle repair",
+      "amount": 700.0
+    },
+    {
+      "description": "Gutter reattachment",
+      "amount": 220.0
+    }
+  ],
+  "claimed_amount_stated": 920.0,
+  "claimed_amount_computed": 920.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

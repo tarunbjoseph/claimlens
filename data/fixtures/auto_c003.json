@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c003",
+  "claim_type": "auto",
+  "policy_id": "POL-773311",
+  "claimant_name": "Tom Reyes",
+  "incident_date": "2026-05-20",
+  "date_reported": "2026-05-21",
+  "incident_description": "Vehicle vandalized (keyed) along both doors while parked overnight in a public lot.",
+  "line_items": [
+    {
+      "description": "Paint repair - driver side",
+      "amount": 650.0
+    },
+    {
+      "description": "Paint repair - passenger side",
+      "amount": 620.0
+    }
+  ],
+  "claimed_amount_stated": 1270.0,
+  "claimed_amount_computed": 1270.0,
+  "supporting_documents": {
+    "police_report": true,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

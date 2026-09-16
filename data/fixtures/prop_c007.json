@@ -1,0 +1,26 @@
+{
+  "claim_id": "prop_c007",
+  "claim_type": "property",
+  "policy_id": "POL-667788",
+  "claimant_name": "Yusuf Demir",
+  "incident_date": "2026-04-20",
+  "date_reported": "2026-04-21",
+  "incident_description": "High winds knocked down a 20-foot section of backyard fence.",
+  "line_items": [
+    {
+      "description": "Fence section replacement",
+      "amount": 850.0
+    }
+  ],
+  "claimed_amount_stated": 850.0,
+  "claimed_amount_computed": 850.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

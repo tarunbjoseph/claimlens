@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c002",
+  "claim_type": "auto",
+  "policy_id": "POL-227744",
+  "claimant_name": "Priya Nair",
+  "incident_date": "2026-06-11",
+  "date_reported": "2026-06-12",
+  "incident_description": "Vehicle broken into overnight in the driveway; front passenger window smashed and aftermarket stereo system stolen. Police report filed same morning.",
+  "line_items": [
+    {
+      "description": "Window glass replacement",
+      "amount": 260.0
+    },
+    {
+      "description": "Stereo system replacement",
+      "amount": 480.0
+    }
+  ],
+  "claimed_amount_stated": 740.0,
+  "claimed_amount_computed": 740.0,
+  "supporting_documents": {
+    "police_report": true,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

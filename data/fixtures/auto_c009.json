@@ -1,0 +1,26 @@
+{
+  "claim_id": "auto_c009",
+  "claim_type": "auto",
+  "policy_id": "POL-664112",
+  "claimant_name": "Owen Baptiste",
+  "incident_date": "2026-08-05",
+  "date_reported": "2026-08-06",
+  "incident_description": "Windshield cracked by road debris on the highway.",
+  "line_items": [
+    {
+      "description": "Windshield replacement",
+      "amount": 380.0
+    }
+  ],
+  "claimed_amount_stated": 380.0,
+  "claimed_amount_computed": 380.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

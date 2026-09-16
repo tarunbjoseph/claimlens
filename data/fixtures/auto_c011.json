@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c011",
+  "claim_type": "auto",
+  "policy_id": "POL-448820",
+  "claimant_name": "Hassan Ali",
+  "incident_date": "2026-02-18",
+  "date_reported": "2026-02-19",
+  "incident_description": "Single-vehicle skid on black ice into a curb; wheel and alignment damage.",
+  "line_items": [
+    {
+      "description": "Wheel replacement",
+      "amount": 320.0
+    },
+    {
+      "description": "Alignment service",
+      "amount": 140.0
+    }
+  ],
+  "claimed_amount_stated": 460.0,
+  "claimed_amount_computed": 460.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

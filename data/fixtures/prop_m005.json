@@ -1,0 +1,21 @@
+{
+  "claim_id": "prop_m005",
+  "claim_type": "property",
+  "policy_id": "POL-119456",
+  "claimant_name": "Ravi Chandran",
+  "incident_date": null,
+  "date_reported": null,
+  "incident_description": "Roof flashing damage from a windstorm; no specific incident or report date given, only 'early this month.'",
+  "line_items": null,
+  "claimed_amount_stated": null,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

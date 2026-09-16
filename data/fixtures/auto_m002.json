@@ -1,0 +1,21 @@
+{
+  "claim_id": "auto_m002",
+  "claim_type": "auto",
+  "policy_id": "POL-664521",
+  "claimant_name": "Katherine Boyle",
+  "incident_date": "2026-08-14",
+  "date_reported": "2026-08-15",
+  "incident_description": "Collided with a shopping cart corral while backing out of a space. [Description truncated on the source scan.]",
+  "line_items": null,
+  "claimed_amount_stated": null,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "illegible_scan"
+  ]
+}

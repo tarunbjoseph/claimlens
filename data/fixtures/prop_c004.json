@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_c004",
+  "claim_type": "property",
+  "policy_id": "POL-114900",
+  "claimant_name": "Renee Castillo",
+  "incident_date": "2026-05-06",
+  "date_reported": "2026-05-06",
+  "incident_description": "Minor electrical fire in a wall outlet, contained by fire department response.",
+  "line_items": [
+    {
+      "description": "Electrical repair",
+      "amount": 600.0
+    },
+    {
+      "description": "Drywall repair",
+      "amount": 380.0
+    }
+  ],
+  "claimed_amount_stated": 980.0,
+  "claimed_amount_computed": 980.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

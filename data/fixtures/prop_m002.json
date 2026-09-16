@@ -1,0 +1,26 @@
+{
+  "claim_id": "prop_m002",
+  "claim_type": "property",
+  "policy_id": null,
+  "claimant_name": "Helena Cross",
+  "incident_date": "2026-03-20",
+  "date_reported": "2026-03-21",
+  "incident_description": "Storm damage to back porch roof panels. Policy number not provided on the form.",
+  "line_items": [
+    {
+      "description": "Porch roof panel repair",
+      "amount": 450.0
+    }
+  ],
+  "claimed_amount_stated": 450.0,
+  "claimed_amount_computed": 450.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

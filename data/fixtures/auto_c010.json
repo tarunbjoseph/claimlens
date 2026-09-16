@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c010",
+  "claim_type": "auto",
+  "policy_id": "POL-990234",
+  "claimant_name": "Grace Liu",
+  "incident_date": "2026-06-14",
+  "date_reported": "2026-06-15",
+  "incident_description": "Tree branch fell on parked vehicle during a windstorm; roof dent and cracked rear windshield.",
+  "line_items": [
+    {
+      "description": "Roof dent repair",
+      "amount": 900.0
+    },
+    {
+      "description": "Rear windshield replacement",
+      "amount": 420.0
+    }
+  ],
+  "claimed_amount_stated": 1320.0,
+  "claimed_amount_computed": 1320.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "claim_id": "auto_c006",
+  "claim_type": "auto",
+  "policy_id": "POL-882234",
+  "claimant_name": "Bethany Cole",
+  "incident_date": "2026-08-01",
+  "date_reported": "2026-08-01",
+  "incident_description": "Animal collision (deer) on a rural road; front-end damage.",
+  "line_items": [
+    {
+      "description": "Front bumper replacement",
+      "amount": 900.0
+    },
+    {
+      "description": "Headlight assembly",
+      "amount": 310.0
+    },
+    {
+      "description": "Hood repair",
+      "amount": 640.0
+    }
+  ],
+  "claimed_amount_stated": 1850.0,
+  "claimed_amount_computed": 1850.0,
+  "supporting_documents": {
+    "police_report": true,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "route_specialist",
+  "known_issues": [
+    "none"
+  ]
+}

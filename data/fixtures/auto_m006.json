@@ -1,0 +1,26 @@
+{
+  "claim_id": "auto_m006",
+  "claim_type": "auto",
+  "policy_id": "POL-556781",
+  "claimant_name": "Derek Huang",
+  "incident_date": "2026-06-09",
+  "date_reported": "2026-06-10",
+  "incident_description": "Minor parking-lot collision. Form text claims photos are attached, but the attachment checkbox is unchecked \u2014 inconsistent, unverifiable as submitted.",
+  "line_items": [
+    {
+      "description": "Bumper repair",
+      "amount": 420.0
+    }
+  ],
+  "claimed_amount_stated": 420.0,
+  "claimed_amount_computed": 420.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "claim_id": "prop_m004",
+  "claim_type": "property",
+  "policy_id": "POL-778120",
+  "claimant_name": "Olivia Bennett",
+  "incident_date": "2026-05-30",
+  "date_reported": "2026-05-31",
+  "incident_description": "Shed door damaged in windstorm. Form text claims a receipt is attached, but the receipts checkbox is unchecked.",
+  "line_items": [
+    {
+      "description": "Shed door replacement",
+      "amount": 260.0
+    }
+  ],
+  "claimed_amount_stated": 260.0,
+  "claimed_amount_computed": 260.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

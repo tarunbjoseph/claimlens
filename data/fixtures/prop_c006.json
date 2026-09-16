@@ -1,0 +1,30 @@
+{
+  "claim_id": "prop_c006",
+  "claim_type": "property",
+  "policy_id": "POL-334521",
+  "claimant_name": "Peter Nowak",
+  "incident_date": "2026-06-02",
+  "date_reported": "2026-06-03",
+  "incident_description": "Hailstorm cracked a rear window and damaged two screens.",
+  "line_items": [
+    {
+      "description": "Window glass replacement",
+      "amount": 300.0
+    },
+    {
+      "description": "Screen replacement (x2)",
+      "amount": 90.0
+    }
+  ],
+  "claimed_amount_stated": 390.0,
+  "claimed_amount_computed": 390.0,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}

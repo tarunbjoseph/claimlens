@@ -1,0 +1,21 @@
+{
+  "claim_id": "prop_x001",
+  "claim_type": "property",
+  "policy_id": "POL-901823",
+  "claimant_name": "Sam Whitfield",
+  "incident_date": "2026-08-25",
+  "date_reported": "2026-08-26",
+  "incident_description": "Reported major basement flooding with total-loss framing and urgency language, but no itemization and no supporting documentation of any kind.",
+  "line_items": null,
+  "claimed_amount_stated": 10000.0,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "escalate_human",
+  "known_issues": [
+    "missing_field"
+  ]
+}

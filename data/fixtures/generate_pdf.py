@@ -23,6 +23,9 @@ the current directory.
 
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+from additional_scenarios import ADDITIONAL_SCENARIOS
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
@@ -239,7 +242,181 @@ SCENARIOS = [
             ],
         },
     },
+    {
+        # CLEAN / AUTO — different incident type (theft, not collision),
+        # so extraction isn't just pattern-matching one template.
+        "claim_id": "auto_c002",
+        "form_text": {
+            "header": "First Harbor Insurance — Auto Claim Form",
+            "claimant_name": "Priya Nair",
+            "policy_id": "POL-227744",
+            "incident_date": "2026-06-11",
+            "date_reported": "2026-06-12",
+            "description": (
+                "Vehicle broken into overnight while parked in the driveway. "
+                "Front passenger window smashed and aftermarket stereo "
+                "system stolen. Police report filed the same morning."
+            ),
+            "line_items": [
+                {"description": "Window glass replacement", "amount": 260.00},
+                {"description": "Stereo system replacement", "amount": 480.00},
+            ],
+            "stated_total": "740.00",
+            "checkboxes": {"police_report": True, "photos": True, "receipts": False},
+        },
+        "ground_truth": {
+            "claim_id": "auto_c002",
+            "claim_type": "auto",
+            "policy_id": "POL-227744",
+            "claimant_name": "Priya Nair",
+            "incident_date": "2026-06-11",
+            "date_reported": "2026-06-12",
+            "incident_description": (
+                "Vehicle broken into overnight in the driveway; front "
+                "passenger window smashed and aftermarket stereo system "
+                "stolen. Police report filed same morning."
+            ),
+            "line_items": [
+                {"description": "Window glass replacement", "amount": 260.00},
+                {"description": "Stereo system replacement", "amount": 480.00},
+            ],
+            "claimed_amount_stated": 740.00,
+            "claimed_amount_computed": 740.00,
+            "supporting_documents": {"police_report": True, "photos": True, "receipts": False},
+            "resolution_expectation": "auto_approve",
+            "known_issues": ["none"],
+        },
+    },
+    {
+        # MESSY / PROPERTY — date_reported missing, and the claimant's own
+        # description is ambiguous about whether this is a new incident or
+        # a continuation of something already on file. No itemization yet.
+        "claim_id": "prop_m001",
+        "form_text": {
+            "header": "First Harbor Insurance — Property Claim Form",
+            "claimant_name": "Jorge Villanueva",
+            "policy_id": "POL-330156",
+            "incident_date": "2026-07-01",
+            "date_reported": None,
+            "description": (
+                "Small grease fire in the kitchen, some smoke damage to the "
+                "cabinets above the stove. Might be related to the "
+                "electrical issue we mentioned before? Not sure if this "
+                "counts as the same claim or a new one. Will get a "
+                "contractor quote soon."
+            ),
+            "line_items": None,
+            "stated_total": None,
+            "checkboxes": {"police_report": False, "photos": False, "receipts": False},
+        },
+        "ground_truth": {
+            "claim_id": "prop_m001",
+            "claim_type": "property",
+            "policy_id": "POL-330156",
+            "claimant_name": "Jorge Villanueva",
+            "incident_date": "2026-07-01",
+            "date_reported": None,
+            "incident_description": (
+                "Small grease fire in the kitchen with smoke damage to "
+                "cabinets above the stove. Claimant is unsure whether this "
+                "relates to a previously reported electrical issue."
+            ),
+            "line_items": None,
+            "claimed_amount_stated": None,
+            "claimed_amount_computed": None,
+            "supporting_documents": {"police_report": False, "photos": False, "receipts": False},
+            "resolution_expectation": "clarify",
+            "known_issues": ["missing_field"],
+        },
+    },
+    {
+        # ADVERSARIAL / PROPERTY — a different adversarial shape on purpose:
+        # no arithmetic mismatch and no date contradiction (nothing to
+        # compute against, since there's no itemization at all), just a
+        # suspiciously round total and urgency language paired with a
+        # total absence of verifiable detail or supporting documents.
+        # Tests whether escalation triggers on missing verifiability,
+        # not only on detectable contradictions.
+        "claim_id": "prop_x001",
+        "form_text": {
+            "header": "First Harbor Insurance — Property Claim Form",
+            "claimant_name": "Sam Whitfield",
+            "policy_id": "POL-901823",
+            "incident_date": "2026-08-25",
+            "date_reported": "2026-08-26",
+            "description": (
+                "Major flooding in the basement destroyed nearly everything "
+                "down there — furniture, storage, appliances. Please "
+                "expedite this claim, we urgently need the funds to "
+                "relocate temporarily. Total loss estimate below."
+            ),
+            "line_items": None,
+            "stated_total": "10,000.00",
+            "checkboxes": {"police_report": False, "photos": False, "receipts": False},
+        },
+        "ground_truth": {
+            "claim_id": "prop_x001",
+            "claim_type": "property",
+            "policy_id": "POL-901823",
+            "claimant_name": "Sam Whitfield",
+            "incident_date": "2026-08-25",
+            "date_reported": "2026-08-26",
+            "incident_description": (
+                "Reported major basement flooding with total-loss framing "
+                "and urgency language, but no itemization and no "
+                "supporting documentation of any kind."
+            ),
+            "line_items": None,
+            "claimed_amount_stated": 10000.00,
+            "claimed_amount_computed": None,
+            "supporting_documents": {"police_report": False, "photos": False, "receipts": False},
+            "resolution_expectation": "escalate_human",
+            "known_issues": ["missing_field"],
+        },
+    },
+    {
+        # MESSY / AUTO — simulated illegible/OCR-garbled scan. The form
+        # fields are present but the description is truncated mid-sentence
+        # and the total is partially unreadable. Tests whether the
+        # extractor recognizes incompleteness rather than completing the
+        # sentence or guessing the missing digit itself.
+        "claim_id": "auto_m002",
+        "form_text": {
+            "header": "First Harbor Insurance — Auto Claim Form",
+            "claimant_name": "Katherine Boyle",
+            "policy_id": "POL-664521",
+            "incident_date": "2026-08-14",
+            "date_reported": "2026-08-15",
+            "description": (
+                "Collided with a shopping cart corral while backing out of "
+                "a space. Front bump—"
+            ),
+            "line_items": None,
+            "stated_total": "4??.00 (illegible)",
+            "checkboxes": {"police_report": False, "photos": False, "receipts": False},
+        },
+        "ground_truth": {
+            "claim_id": "auto_m002",
+            "claim_type": "auto",
+            "policy_id": "POL-664521",
+            "claimant_name": "Katherine Boyle",
+            "incident_date": "2026-08-14",
+            "date_reported": "2026-08-15",
+            "incident_description": (
+                "Collided with a shopping cart corral while backing out of "
+                "a space. [Description truncated on the source scan.]"
+            ),
+            "line_items": None,
+            "claimed_amount_stated": None,
+            "claimed_amount_computed": None,
+            "supporting_documents": {"police_report": False, "photos": False, "receipts": False},
+            "resolution_expectation": "clarify",
+            "known_issues": ["illegible_scan"],
+        },
+    },
 ]
+
+SCENARIOS = SCENARIOS + ADDITIONAL_SCENARIOS
 
 
 def render_pdf(scenario: dict, out_path: Path) -> None:

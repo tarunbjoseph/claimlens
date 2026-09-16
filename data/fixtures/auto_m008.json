@@ -1,0 +1,21 @@
+{
+  "claim_id": "auto_m008",
+  "claim_type": null,
+  "policy_id": "POL-882456",
+  "claimant_name": "Miguel Santos",
+  "incident_date": "2026-08-11",
+  "date_reported": "2026-08-12",
+  "incident_description": "Garage fire damaged both a vehicle and structural elements \u2014 spans auto and property coverage, cannot be classified as a single type without clarification.",
+  "line_items": null,
+  "claimed_amount_stated": null,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

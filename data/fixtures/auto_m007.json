@@ -1,0 +1,21 @@
+{
+  "claim_id": "auto_m007",
+  "claim_type": "auto",
+  "policy_id": "POL-770123",
+  "claimant_name": "Angela Ruiz",
+  "incident_date": null,
+  "date_reported": "2026-07-02",
+  "incident_description": "Driver-door dent noticed with no known incident date or recollection of cause.",
+  "line_items": null,
+  "claimed_amount_stated": null,
+  "claimed_amount_computed": null,
+  "supporting_documents": {
+    "police_report": false,
+    "photos": false,
+    "receipts": false
+  },
+  "resolution_expectation": "clarify",
+  "known_issues": [
+    "missing_field"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "claim_id": "auto_c005",
+  "claim_type": "auto",
+  "policy_id": "POL-556690",
+  "claimant_name": "Marcus Webb",
+  "incident_date": "2026-07-08",
+  "date_reported": "2026-07-08",
+  "incident_description": "Hit-and-run \u2014 driver-side mirror sheared off and door dented while parked, no other-party information available.",
+  "line_items": [
+    {
+      "description": "Side mirror replacement",
+      "amount": 210.0
+    },
+    {
+      "description": "Door dent repair",
+      "amount": 340.0
+    }
+  ],
+  "claimed_amount_stated": 550.0,
+  "claimed_amount_computed": 550.0,
+  "supporting_documents": {
+    "police_report": true,
+    "photos": true,
+    "receipts": false
+  },
+  "resolution_expectation": "auto_approve",
+  "known_issues": [
+    "none"
+  ]
+}
