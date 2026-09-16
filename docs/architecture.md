@@ -5,6 +5,9 @@ read the code. It is a living document: updated after every day's work,
 not just written once at the start. If you want to explain this project
 to someone outside it, start here.
 
+Polished showcase version of the diagram below, meant for sharing:
+**[ClaimLens Pipeline](https://claude.ai/artifact/JrUDgEMrSeeYPyMUo5Rhfn)**.
+
 ## What ClaimLens is
 
 An AI system that reads an insurance claim PDF and decides what to do
