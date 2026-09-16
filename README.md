@@ -6,9 +6,13 @@ specialist, or escalate to a human — the same triage call a claims
 processor makes, built so it never guesses at missing information and
 never lets text embedded in a claim change what it does.
 
-Full plain-English walkthrough, with a running log of what's been
-caught and fixed along the way: **[docs/architecture.md](docs/architecture.md)**.
-Showcase diagram: **[ClaimLens Pipeline](https://claude.ai/artifact/JrUDgEMrSeeYPyMUo5Rhfn)**.
+**New here? Start with these three:**
+- **[ClaimLens Pipeline](https://claude.ai/artifact/JrUDgEMrSeeYPyMUo5Rhfn)** — a one-page diagram of how a claim moves through the system and how it decides
+- **[docs/architecture.md](docs/architecture.md)** — plain-English walkthrough, with a running log of what's been caught and fixed along the way
+- **[docs/project-plan.md](docs/project-plan.md)** — the full 4-week build plan this project follows, day by day, including the reasoning behind its architecture
+
+Day-by-day narrative of what was actually built (not just planned):
+**[docs/build-log.md](docs/build-log.md)**.
 
 ## How it works
 

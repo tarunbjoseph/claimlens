@@ -7,6 +7,7 @@ to someone outside it, start here.
 
 Polished showcase version of the diagram below, meant for sharing:
 **[ClaimLens Pipeline](https://claude.ai/artifact/JrUDgEMrSeeYPyMUo5Rhfn)**.
+Full day-by-day build plan this project follows: **[docs/project-plan.md](project-plan.md)**.
 
 ## What ClaimLens is
 
